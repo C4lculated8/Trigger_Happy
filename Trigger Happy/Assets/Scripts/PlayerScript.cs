@@ -6,6 +6,7 @@ public class PlayerScript : MonoBehaviour
     [Header("Movement")]
     public float speed;
     public float jump;
+    public float runLeniency;
 
     private float horizontal;
     private bool facingRight = true;
@@ -31,12 +32,22 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private Animator animator;
 
     void Update()
     {
         if (isSliding)
         {
             return;
+        }
+
+        if(horizontal > runLeniency || horizontal < -runLeniency)
+        {
+            animator.SetBool("isRunning", true);
+        }
+        else
+        {
+            animator.SetBool("isRunning", false);
         }
 
         if (IsGrounded())
@@ -63,6 +74,8 @@ public class PlayerScript : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jump);
 
+            animator.SetBool("isJumping", true);
+
             jumpBufferCounter = 0f;
         }
 
@@ -76,6 +89,11 @@ public class PlayerScript : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.S) && canSlide && coyoteTimeCounter > 0f)
         {
             StartCoroutine(Slide());
+        }
+
+        if(rb.linearVelocity.y < 0.01f)
+        {
+            animator.SetBool("isJumping", false);
         }
 
         Flip();
@@ -109,6 +127,7 @@ public class PlayerScript : MonoBehaviour
 
     private IEnumerator Slide()
     {
+        animator.SetBool("sliding", true);
         canSlide = false;
         isSliding = true;
         float originalGravity = rb.gravityScale;
@@ -119,5 +138,6 @@ public class PlayerScript : MonoBehaviour
         isSliding = false;
         yield return new WaitForSeconds(slideCooldown);
         canSlide = true;
+        animator.SetBool("sliding", false);
     }
 }

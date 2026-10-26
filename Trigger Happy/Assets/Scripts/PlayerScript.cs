@@ -31,14 +31,28 @@ public class PlayerScript : MonoBehaviour
     [Header("References")]
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
+    [SerializeField] private Transform roofCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Animator animator;
+    [SerializeField] private BoxCollider2D boxCollider;
 
     void Update()
     {
         if (isSliding)
         {
-            return;
+            BoxCollider2D collider = boxCollider;
+            collider.size = new Vector2(0.54f, 0.42f);
+            collider.offset = new Vector2(0f, -0.24f);
+            boxCollider.size = collider.size;
+            boxCollider.offset = collider.offset;
+        }
+        else
+        {
+            BoxCollider2D collider = boxCollider;
+            collider.size = new Vector2(0.54f, 0.84f);
+            collider.offset = new Vector2(0f, 0f);
+            boxCollider.size = collider.size;
+            boxCollider.offset = collider.offset;
         }
 
         if(horizontal > runLeniency || horizontal < -runLeniency)
@@ -101,12 +115,10 @@ public class PlayerScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (isSliding)
+        if (!isSliding)
         {
-            return;
+            rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
         }
-
-        rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
     }
 
     private void Flip()
@@ -122,7 +134,12 @@ public class PlayerScript : MonoBehaviour
 
     private bool IsGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        return Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
+    }
+
+    private bool IsUnderGround()
+    {
+        return Physics2D.OverlapCircle(roofCheck.position, 0.1f, groundLayer);
     }
 
     private IEnumerator Slide()
@@ -132,8 +149,13 @@ public class PlayerScript : MonoBehaviour
         isSliding = true;
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
-        rb.linearVelocity = new Vector2(transform.localScale.x * slidePower, 0f);
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x + (transform.localScale.x * slidePower), 0f);
         yield return new WaitForSeconds(slideTime);
+        while (IsUnderGround())
+        {
+            animator.SetBool("sliding", true);
+            yield return null;
+        }
         rb.gravityScale = originalGravity;
         isSliding = false;
         yield return new WaitForSeconds(slideCooldown);

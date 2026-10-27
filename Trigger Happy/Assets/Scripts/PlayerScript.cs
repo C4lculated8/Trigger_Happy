@@ -35,6 +35,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Animator animator;
     [SerializeField] private BoxCollider2D boxCollider;
+    [SerializeField] private GameObject gun;
 
     void Update()
     {
@@ -126,8 +127,11 @@ public class PlayerScript : MonoBehaviour
         if(facingRight && horizontal < 0f || !facingRight && horizontal > 0f)
         {
             facingRight = !facingRight;
+            Vector3 gunScale = gun.transform.localScale;
             Vector3 localScale = transform.localScale;
+            gunScale.x *= -1;
             localScale.x *= -1;
+            gun.transform.localScale = gunScale;
             transform.localScale = localScale;
         }
     }

@@ -1,0 +1,1003 @@
+fileFormatVersion: 2
+guid: bad500084f8e03946aeece61ca1496d0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7262784643716063193
+    second: PlayerHandless_0
+  - first:
+      213: -9062755705517818506
+    second: PlayerHandless_1
+  - first:
+      213: 75763316408386329
+    second: PlayerHandless_2
+  - first:
+      213: -8354654331781535959
+    second: PlayerHandless_3
+  - first:
+      213: -6730709847383745742
+    second: PlayerHandless_4
+  - first:
+      213: -7570424008082266654
+    second: PlayerHandless_5
+  - first:
+      213: -5193864610301001693
+    second: PlayerHandless_6
+  - first:
+      213: 73607927977815960
+    second: PlayerHandless_7
+  - first:
+      213: -1249244418410044138
+    second: PlayerHandless_8
+  - first:
+      213: 8960326297135662384
+    second: PlayerHandless_9
+  - first:
+      213: -6979055404153014747
+    second: PlayerHandless_10
+  - first:
+      213: 6578870450410779566
+    second: PlayerHandless_11
+  - first:
+      213: 689433198016103509
+    second: PlayerHandless_12
+  - first:
+      213: -7820625177811145115
+    second: PlayerHandless_13
+  - first:
+      213: 6629187888409531686
+    second: PlayerHandless_14
+  - first:
+      213: 7971829798247399067
+    second: PlayerHandless_15
+  - first:
+      213: 3678772686932283455
+    second: PlayerHandless_16
+  - first:
+      213: 5270193517161308753
+    second: PlayerHandless_17
+  - first:
+      213: 1282247514801877453
+    second: PlayerHandless_18
+  - first:
+      213: 8476641788699902748
+    second: PlayerHandless_19
+  - first:
+      213: 4308607917974895280
+    second: PlayerHandless_20
+  - first:
+      213: 8230250599692928946
+    second: PlayerHandless_21
+  - first:
+      213: -869930054418957401
+    second: PlayerHandless_22
+  - first:
+      213: -2214327124952526296
+    second: PlayerHandless_23
+  - first:
+      213: -1904799089820737054
+    second: PlayerHandless_24
+  - first:
+      213: 6232726371922158865
+    second: PlayerHandless_25
+  - first:
+      213: -4024512370189695998
+    second: PlayerHandless_26
+  - first:
+      213: 7875773107960936288
+    second: PlayerHandless_27
+  - first:
+      213: -1052962958673062384
+    second: PlayerHandless_28
+  - first:
+      213: -4338183938114778562
+    second: PlayerHandless_29
+  - first:
+      213: 3002678862398099304
+    second: PlayerHandless_30
+  - first:
+      213: -7800847965638902256
+    second: PlayerHandless_31
+  - first:
+      213: 5168202592509403474
+    second: PlayerHandless_32
+  - first:
+      213: 5438685354004033160
+    second: PlayerHandless_33
+  - first:
+      213: 6109981838880002315
+    second: PlayerHandless_34
+  - first:
+      213: -7450709384544130524
+    second: PlayerHandless_35
+  - first:
+      213: 8367940527151648029
+    second: PlayerHandless_36
+  - first:
+      213: -2979605148180376371
+    second: PlayerHandless_37
+  - first:
+      213: -8835783164055462899
+    second: PlayerHandless_38
+  - first:
+      213: -7066552423306811474
+    second: PlayerHandless_39
+  - first:
+      213: -133282519563187446
+    second: PlayerHandless_40
+  - first:
+      213: -7130488566837491512
+    second: PlayerHandless_41
+  - first:
+      213: 9059408460079003968
+    second: PlayerHandless_42
+  - first:
+      213: -6518349039408112181
+    second: PlayerHandless_43
+  - first:
+      213: -8094721484615726956
+    second: PlayerHandless_44
+  - first:
+      213: 9187400588668414416
+    second: PlayerHandless_45
+  - first:
+      213: 2921669424167641295
+    second: PlayerHandless_46
+  - first:
+      213: 382677367119144224
+    second: PlayerHandless_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 13.333333
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerHandless_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 231
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 720642fa8d7653b90800000000000000
+      internalID: -7262784643716063193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_9
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 230
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67d377ec3bf9a3280800000000000000
+      internalID: -9062755705517818506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_17
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 231
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9130789b55a2d0100800000000000000
+      internalID: 75763316408386329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_25
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 231
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e5ea27797370f690800000000000000
+      internalID: -7570424008082266654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_2
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 199
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 320498bb7afabe7b0800000000000000
+      internalID: -5193864610301001693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_10
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 199
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89f25cf3502850100800000000000000
+      internalID: 73607927977815960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_18
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 199
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 615a70bf1dac9aee0800000000000000
+      internalID: -1249244418410044138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 199
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea37c0c71d7dc4b50800000000000000
+      internalID: 6578870450410779566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_3
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 167
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5548c1047db519900800000000000000
+      internalID: 689433198016103509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_11
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 166
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e271316de877390800000000000000
+      internalID: -7820625177811145115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_19
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 167
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 625d8f5f24b9ffb50800000000000000
+      internalID: 6629187888409531686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 167
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15267f7c41d732940800000000000000
+      internalID: 5270193517161308753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 135
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc1b4e132557bc110800000000000000
+      internalID: 1282247514801877453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_12
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 135
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1380bfabc413a570800000000000000
+      internalID: 8476641788699902748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_20
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 135
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba345bc2104bcb30800000000000000
+      internalID: 4308607917974895280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_28
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 135
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82251bc36312541e0800000000000000
+      internalID: -2214327124952526296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_5
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 103
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e16fb2e15bc095e0800000000000000
+      internalID: -1904799089820737054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_13
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 102
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11521a4ec971f7650800000000000000
+      internalID: 6232726371922158865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_21
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 102
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2048da4725f0628c0800000000000000
+      internalID: -4024512370189695998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_29
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 103
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a0d5661bcabc3c0800000000000000
+      internalID: -4338183938114778562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_6
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 71
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86f00d73488aba920800000000000000
+      internalID: 3002678862398099304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_14
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 70
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01eb34d1b12ddb390800000000000000
+      internalID: -7800847965638902256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_22
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 70
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 251a6c520e429b740800000000000000
+      internalID: 5168202592509403474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 71
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ae3915a43c99890800000000000000
+      internalID: -7450709384544130524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_7
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 39
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d087ef295e02470800000000000000
+      internalID: 8367940527151648029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_15
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 38
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc498c387e056a6d0800000000000000
+      internalID: -2979605148180376371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_23
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 38
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0cd81ab60ef06580800000000000000
+      internalID: -8835783164055462899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 39
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8caaa6d6a6b0d90800000000000000
+      internalID: -7130488566837491512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 7
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0497d22eefb79bd70800000000000000
+      internalID: 9059408460079003968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_16
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 6
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcd1218951c2a85a0800000000000000
+      internalID: -6518349039408112181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_24
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 7
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498c1c982b5c9af80800000000000000
+      internalID: -8094721484615726956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHandless_32
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 7
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025e7b2b90b8f4500800000000000000
+      internalID: 382677367119144224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 75f1298862dd28a4886771792624753d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PlayerHandless_1: -7262784643716063193
+      PlayerHandless_10: 73607927977815960
+      PlayerHandless_11: -7820625177811145115
+      PlayerHandless_12: 8476641788699902748
+      PlayerHandless_13: 6232726371922158865
+      PlayerHandless_14: -7800847965638902256
+      PlayerHandless_15: -2979605148180376371
+      PlayerHandless_16: -6518349039408112181
+      PlayerHandless_17: 75763316408386329
+      PlayerHandless_18: -1249244418410044138
+      PlayerHandless_19: 6629187888409531686
+      PlayerHandless_2: -5193864610301001693
+      PlayerHandless_20: 4308607917974895280
+      PlayerHandless_21: -4024512370189695998
+      PlayerHandless_22: 5168202592509403474
+      PlayerHandless_23: -8835783164055462899
+      PlayerHandless_24: -8094721484615726956
+      PlayerHandless_25: -7570424008082266654
+      PlayerHandless_26: 6578870450410779566
+      PlayerHandless_27: 5270193517161308753
+      PlayerHandless_28: -2214327124952526296
+      PlayerHandless_29: -4338183938114778562
+      PlayerHandless_3: 689433198016103509
+      PlayerHandless_30: -7450709384544130524
+      PlayerHandless_31: -7130488566837491512
+      PlayerHandless_32: 382677367119144224
+      PlayerHandless_33: 5438685354004033160
+      PlayerHandless_34: 6109981838880002315
+      PlayerHandless_39: -7066552423306811474
+      PlayerHandless_4: 1282247514801877453
+      PlayerHandless_40: -133282519563187446
+      PlayerHandless_45: 9187400588668414416
+      PlayerHandless_46: 2921669424167641295
+      PlayerHandless_5: -1904799089820737054
+      PlayerHandless_6: 3002678862398099304
+      PlayerHandless_7: 8367940527151648029
+      PlayerHandless_8: 9059408460079003968
+      PlayerHandless_9: -9062755705517818506
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

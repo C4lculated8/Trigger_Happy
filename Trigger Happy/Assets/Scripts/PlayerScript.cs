@@ -49,13 +49,15 @@ public class PlayerScript : MonoBehaviour
         else
         {
             BoxCollider2D collider = boxCollider;
-            collider.size = new Vector2(0.54f, 0.84f);
+            collider.size = new Vector2(0.67f, 1.26f);
             collider.offset = new Vector2(0f, 0f);
             boxCollider.size = collider.size;
             boxCollider.offset = collider.offset;
         }
 
-        if(horizontal > runLeniency || horizontal < -runLeniency)
+        horizontal = Input.GetAxisRaw("Horizontal");
+
+        if (horizontal > runLeniency || horizontal < -runLeniency)
         {
             animator.SetBool("isRunning", true);
         }
@@ -72,8 +74,6 @@ public class PlayerScript : MonoBehaviour
         {
             coyoteTimeCounter -= Time.deltaTime;
         }
-
-        horizontal = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetButtonDown("Jump"))
         {
@@ -134,12 +134,12 @@ public class PlayerScript : MonoBehaviour
 
     private bool IsGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
+        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
     private bool IsUnderGround()
     {
-        return Physics2D.OverlapCircle(roofCheck.position, 0.1f, groundLayer);
+        return Physics2D.OverlapCircle(roofCheck.position, 0.2f, groundLayer);
     }
 
     private IEnumerator Slide()

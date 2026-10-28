@@ -16687,6 +16687,10 @@ PrefabInstance:
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4750561013410478533, guid: 3445ccb64c9232742a245abe32f65ad6, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 7034968705549428513}
+    - target: {fileID: 4750561013410478533, guid: 3445ccb64c9232742a245abe32f65ad6, type: 3}
       propertyPath: force
       value: 35
       objectReference: {fileID: 0}
@@ -16743,6 +16747,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3445ccb64c9232742a245abe32f65ad6, type: 3}
+--- !u!95 &7034968705549428513 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4499460104070315153, guid: 3445ccb64c9232742a245abe32f65ad6, type: 3}
+  m_PrefabInstance: {fileID: 4350506752972803689}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

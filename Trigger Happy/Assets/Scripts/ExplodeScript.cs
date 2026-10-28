@@ -6,6 +6,7 @@ public class ExplodeScript : MonoBehaviour
     public float force;
 
     [SerializeField] private GameObject particles;
+    [SerializeField] private Animator anim;
     
     void Update()
     {
@@ -39,6 +40,10 @@ public class ExplodeScript : MonoBehaviour
                 rb.AddForce(direction * force, ForceMode2D.Impulse);
             }
         }
+
+        anim.SetBool("isExploding", true);
+        Instantiate(particles, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 
     void OnDrawGizmosSelected()

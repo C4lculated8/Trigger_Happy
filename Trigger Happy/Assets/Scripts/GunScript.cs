@@ -9,7 +9,12 @@ public class GunScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Instantiate(bullet, bulletSpawnpoint.position, transform.rotation);
+            Shoot();
         }
+    }
+
+    public void Shoot()
+    {
+        Instantiate(bullet, bulletSpawnpoint.position, transform.rotation);
     }
 }

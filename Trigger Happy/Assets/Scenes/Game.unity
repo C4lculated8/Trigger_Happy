@@ -2032,7 +2032,7 @@ GameObject:
   - component: {fileID: 538210816}
   - component: {fileID: 538210819}
   - component: {fileID: 538210818}
-  - component: {fileID: 538210817}
+  - component: {fileID: 538210820}
   m_Layer: 0
   m_Name: EnemyGun
   m_TagString: Untagged
@@ -2056,20 +2056,6 @@ Transform:
   - {fileID: 450900092}
   m_Father: {fileID: 342402772}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &538210817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538210815}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3aeb9eae8453d4045b777a1e03a903fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  bulletSpawnpoint: {fileID: 450900092}
-  bullet: {fileID: 6814290023742271511, guid: 51e64055853aca94eb380d97af28a313, type: 3}
 --- !u!114 &538210818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2142,6 +2128,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &538210820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538210815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb98937f04ca6d4197762073294148e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  bulletSpawnpoint: {fileID: 450900092}
+  bullet: {fileID: 6814290023742271511, guid: 51e64055853aca94eb380d97af28a313, type: 3}
 --- !u!1 &570208138
 GameObject:
   m_ObjectHideFlags: 0
@@ -2722,10 +2722,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a855a1fbcdd449546a1c028e26af1d0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  aggressionRadius: 3
+  cooldown: 5
   rb: {fileID: 726053324}
-  animator: {fileID: 726053323}
-  boxCollider: {fileID: 726053320}
+  anim: {fileID: 726053323}
   player: {fileID: 1781185899}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  enemyGunScript: {fileID: 538210820}
   gun: {fileID: 538210815}
 --- !u!1 &859791686
 GameObject:

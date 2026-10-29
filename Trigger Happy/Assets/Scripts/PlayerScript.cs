@@ -101,10 +101,7 @@ public class PlayerScript : MonoBehaviour
 
         if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0f)
         {
-            rb.linearVelocity = new Vector2(
-                rb.linearVelocity.x,
-                rb.linearVelocity.y * 0.5f
-            );
+            rb.linearVelocity = new Vector2( rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
 
             coyoteTimeCounter = 0f;
         }
@@ -139,16 +136,9 @@ public class PlayerScript : MonoBehaviour
                 accelerationRate = deceleration;
             }
 
-            float newX = Mathf.MoveTowards(
-                rb.linearVelocity.x,
-                targetSpeed,
-                accelerationRate * Time.fixedDeltaTime
-            );
+            float newX = Mathf.MoveTowards(rb.linearVelocity.x, targetSpeed, accelerationRate * Time.fixedDeltaTime);
 
-            rb.linearVelocity = new Vector2(
-                newX,
-                rb.linearVelocity.y
-            );
+            rb.linearVelocity = new Vector2(newX, rb.linearVelocity.y);
 
             slidePower = 16f;
         }
@@ -178,20 +168,12 @@ public class PlayerScript : MonoBehaviour
 
     private bool IsGrounded()
     {
-        return Physics2D.OverlapCircle(
-            groundCheck.position,
-            0.2f,
-            groundLayer
-        );
+        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
     private bool IsUnderGround()
     {
-        return Physics2D.OverlapCircle(
-            roofCheck.position,
-            0.2f,
-            groundLayer
-        );
+        return Physics2D.OverlapCircle(roofCheck.position, 0.2f, groundLayer);
     }
 
     private IEnumerator Slide()
@@ -204,10 +186,7 @@ public class PlayerScript : MonoBehaviour
 
         rb.gravityScale = 0f;
 
-        rb.linearVelocity = new Vector2(
-            rb.linearVelocity.x + (transform.localScale.x * slidePower),
-            0f
-        );
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x + (transform.localScale.x * slidePower), 0f);
 
         yield return new WaitForSeconds(slideTime);
 

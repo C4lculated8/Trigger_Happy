@@ -25,10 +25,6 @@ public class RotateGunScript : MonoBehaviour
             transform.localRotation = Quaternion.Euler(0f, 0f, angle);
         }
 
-        transform.localScale = new Vector3(
-            Mathf.Abs(transform.localScale.x),
-            yScale,
-            Mathf.Abs(transform.localScale.z)
-        );
+        transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), yScale, Mathf.Abs(transform.localScale.z));
     }
 }

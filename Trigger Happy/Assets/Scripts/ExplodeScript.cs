@@ -39,6 +39,10 @@ public class ExplodeScript : MonoBehaviour
             else
             {
                 rb.AddForce(direction * force, ForceMode2D.Impulse);
+                if(enemyScript != null)
+                {
+                    enemyScript.dead = true;
+                }
             }
         }
 

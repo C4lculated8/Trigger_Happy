@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3794875095700945809}
   - component: {fileID: 344867571599460336}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 'EnemyGunPivot '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 236562902820570612}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemyBulletSpawnpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 4869560972289823729}
   - component: {fileID: 598477220587243608}
   - component: {fileID: 1841325498040910931}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -307,7 +307,7 @@ GameObject:
   - component: {fileID: 6979350758134924587}
   - component: {fileID: 4751669303922210550}
   - component: {fileID: 5411951642702597133}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemyGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,3 +416,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   bulletSpawnpoint: {fileID: 236562902820570612}
   bullet: {fileID: 6814290023742271511, guid: 51e64055853aca94eb380d97af28a313, type: 3}
+  particles: {fileID: 8727337341856428995, guid: 855852bfa89fb7a4ba0345aa69066670, type: 3}

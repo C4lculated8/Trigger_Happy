@@ -5,11 +5,14 @@ public class EnemyScript : MonoBehaviour
 {
     public float aggressionRadius;
     public float cooldown;
+    public float aftermath;
     private float counter = 0f;
 
     private bool facingRight = true;
     private bool playerInRange;
-    public bool aggressive;
+    public bool flipped = false;
+    public bool aggressive = false;
+    public bool dead = false;
 
     [Header("References")]
     [SerializeField] private Rigidbody2D rb;
@@ -28,7 +31,11 @@ public class EnemyScript : MonoBehaviour
             aggressive = true;
         }
 
-        if(aggressive == true)
+        if(dead == true)
+        {
+            Die();
+        }
+        else if(aggressive == true)
         {
             Attack();
         }
@@ -51,7 +58,7 @@ public class EnemyScript : MonoBehaviour
 
     public void Attack()
     {
-        Flip();
+        LookAtPlayer();
 
         anim.SetBool("isAggressive", true);
         
@@ -69,7 +76,22 @@ public class EnemyScript : MonoBehaviour
         enemyGunScript.Shoot();
     }
 
-    private void Flip()
+    public void Die()
+    {
+        anim.SetBool("isDead", true);
+        aftermath -= Time.deltaTime;
+        if (aftermath <= 0f)
+        {
+            Destroy(gameObject);
+        }
+        if (((facingRight && rb.linearVelocity.x > 0f) || !facingRight && rb.linearVelocity.x < 0f) && !flipped)
+        {
+            flipped = true;
+            Flip();
+        }
+    }
+
+    private void LookAtPlayer()
     {
         Vector3 playerPosition = player.position;
 
@@ -77,16 +99,21 @@ public class EnemyScript : MonoBehaviour
 
         if (facingRight && direction.x < 0f || !facingRight && direction.x > 0f)
         {
-            facingRight = !facingRight;
-
-            Vector3 gunScale = gun.transform.localScale;
-            Vector3 localScale = transform.localScale;
-
-            gunScale.x *= -1;
-            localScale.x *= -1;
-
-            gun.transform.localScale = gunScale;
-            transform.localScale = localScale;
+            Flip();
         }
+    }
+
+    private void Flip()
+    {
+        facingRight = !facingRight;
+
+        Vector3 gunScale = gun.transform.localScale;
+        Vector3 localScale = transform.localScale;
+
+        gunScale.x *= -1;
+        localScale.x *= -1;
+
+        gun.transform.localScale = gunScale;
+        transform.localScale = localScale;
     }
 }

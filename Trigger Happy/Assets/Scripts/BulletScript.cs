@@ -29,5 +29,16 @@ public class BulletScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
+        if(collision.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+        }
+
+        if(collision.gameObject.tag == "Enemy")
+        {
+            collision.gameObject.GetComponent<EnemyScript>().dead = true;
+            Destroy(gameObject);
+        }
     }
 }

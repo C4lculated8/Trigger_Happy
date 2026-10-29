@@ -30,6 +30,7 @@ public class ExplodeScript : MonoBehaviour
             direction.Normalize();
 
             PlayerScript playerScript = obj.GetComponent<PlayerScript>();
+            EnemyScript enemyScript = obj.GetComponent<EnemyScript>();
 
             if (playerScript != null)
             {

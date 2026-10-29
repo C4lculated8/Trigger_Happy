@@ -7,7 +7,7 @@ public class EnemyRotateScript : MonoBehaviour
 
     void Update()
     {
-        if(holder.GetComponent<EnemyScript>().aggressive == true)
+        if(holder.GetComponent<EnemyScript>().aggressive == true && holder.GetComponent<EnemyScript>().dead == false)
         {
             Vector3 playerPosition = player.position;
 

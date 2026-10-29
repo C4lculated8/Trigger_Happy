@@ -22,6 +22,11 @@ public class EnemyScript : MonoBehaviour
     [SerializeField] private EnemyGunScript enemyGunScript;
     [SerializeField] private GameObject gun;
 
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+
     void Update()
     {
         playerInRange = Physics2D.OverlapCircle(transform.position, aggressionRadius, playerLayer);
@@ -80,6 +85,7 @@ public class EnemyScript : MonoBehaviour
     {
         anim.SetBool("isDead", true);
         aftermath -= Time.deltaTime;
+        Destroy(gun);
         if (aftermath <= 0f)
         {
             Destroy(gameObject);
@@ -107,13 +113,24 @@ public class EnemyScript : MonoBehaviour
     {
         facingRight = !facingRight;
 
-        Vector3 gunScale = gun.transform.localScale;
-        Vector3 localScale = transform.localScale;
+        if(gun != null)
+        {
+            Vector3 gunScale = gun.transform.localScale;
+            Vector3 localScale = transform.localScale;
 
-        gunScale.x *= -1;
-        localScale.x *= -1;
+            gunScale.x *= -1;
+            localScale.x *= -1;
 
-        gun.transform.localScale = gunScale;
-        transform.localScale = localScale;
+            gun.transform.localScale = gunScale;
+            transform.localScale = localScale;
+        }
+        else
+        {
+            Vector3 localScale = transform.localScale;
+
+            localScale.x *= -1;
+
+            transform.localScale = localScale;
+        }
     }
 }

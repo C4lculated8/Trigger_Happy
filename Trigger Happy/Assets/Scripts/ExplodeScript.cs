@@ -8,9 +8,9 @@ public class ExplodeScript : MonoBehaviour
     [SerializeField] private GameObject particles;
     [SerializeField] private Animator anim;
     
-    void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.Mouse1))
+        if(collision.gameObject.tag == "Bullet")
         {
             Explode();
         }

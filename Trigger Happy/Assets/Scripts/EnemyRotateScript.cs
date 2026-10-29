@@ -5,6 +5,11 @@ public class EnemyRotateScript : MonoBehaviour
     [SerializeField] private Transform player;
     [SerializeField] private Transform holder;
 
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+
     void Update()
     {
         if(holder.GetComponent<EnemyScript>().aggressive == true && holder.GetComponent<EnemyScript>().dead == false)

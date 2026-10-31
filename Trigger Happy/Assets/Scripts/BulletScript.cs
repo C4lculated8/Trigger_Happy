@@ -25,15 +25,14 @@ public class BulletScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if(collision.gameObject.tag == "Player" && gameObject.tag == "EnemyBullet")
         {
             Destroy(gameObject);
         }
 
-        if(collision.gameObject.tag == "Enemy")
+        if(collision.gameObject.tag == "Enemy" && gameObject.tag == "PlayerBullet")
         {
             collision.gameObject.GetComponent<EnemyScript>().dead = true;
-            Destroy(gameObject);
         }
 
         Destroy(gameObject);

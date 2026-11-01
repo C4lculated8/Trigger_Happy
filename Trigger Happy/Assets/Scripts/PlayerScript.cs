@@ -41,6 +41,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private BoxCollider2D boxCollider;
     [SerializeField] private GameObject gun;
+    [SerializeField] private LogicScript logicScript;
 
     void Update()
     {
@@ -62,6 +63,15 @@ public class PlayerScript : MonoBehaviour
         }
 
         horizontal = Input.GetAxisRaw("Horizontal");
+
+        if(horizontal == 0)
+        {
+            logicScript.SlowDown();
+        }
+        else
+        {
+            logicScript.SpeedUp();
+        }
 
         if (horizontal > runLeniency || horizontal < -runLeniency)
         {

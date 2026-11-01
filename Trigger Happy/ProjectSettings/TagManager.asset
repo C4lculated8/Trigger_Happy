@@ -42,8 +42,20 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Back
+    uniqueID: 3013014311
+    locked: 0
+  - name: Middle
+    uniqueID: 2655740543
+    locked: 0
+  - name: Front
+    uniqueID: 579401359
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Game
+    uniqueID: 3047007215
     locked: 0
   m_RenderingLayers:
   - Default

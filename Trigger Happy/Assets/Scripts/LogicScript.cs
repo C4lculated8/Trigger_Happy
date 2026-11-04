@@ -8,7 +8,8 @@ public class LogicScript : MonoBehaviour
 {
     public float slowDownSpeed;
 
-    [SerializeField] private TextMeshProUGUI restartScreen;
+    [SerializeField] private GameObject restartScreen;
+    [SerializeField] private GameObject winScreen;
     [SerializeField] private Volume volume;
     [SerializeField] private ChromaticAberration chrome;
     [SerializeField] private float transitionSpeed;
@@ -37,9 +38,19 @@ public class LogicScript : MonoBehaviour
         chrome.intensity.value = Mathf.Lerp(chrome.intensity.value, 0f, Time.deltaTime * transitionSpeed); ;
     }
 
+    public void Win()
+    {
+        winScreen.SetActive(true);
+    }
+
     public void GameOver()
     {
-        restartScreen.gameObject.SetActive(true);
+        restartScreen.SetActive(true);
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadSceneAsync("MainMenu");
     }
 
     public void Restart()

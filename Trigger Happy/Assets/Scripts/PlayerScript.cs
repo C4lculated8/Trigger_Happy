@@ -41,6 +41,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private BoxCollider2D boxCollider;
     [SerializeField] private GameObject gun;
+    [SerializeField] private GameObject deathParticles;
     [SerializeField] private LogicScript logicScript;
 
     void Update()
@@ -174,6 +175,13 @@ public class PlayerScript : MonoBehaviour
     public void Explode(Vector2 direction, float force)
     {
         rb.linearVelocity += direction.normalized * force;
+    }
+
+    public void Die()
+    {
+        logicScript.GameOver();
+        Instantiate(deathParticles, transform.position, Quaternion.identity);
+        gameObject.SetActive(false);
     }
 
     private bool IsGrounded()

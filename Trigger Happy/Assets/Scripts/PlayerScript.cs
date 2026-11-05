@@ -30,6 +30,10 @@ public class PlayerScript : MonoBehaviour
     private bool canSlide = true;
     private bool isSliding;
 
+    [Header("Slide Buffer")]
+    public float slideBufferTime = 0.15f;
+    private float slideBufferCounter;
+
     [Header("Explosion")]
     public float weight;
 
@@ -49,20 +53,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (isSliding)
         {
-            BoxCollider2D collider = boxCollider;
-            collider.size = new Vector2(0.54f, 0.42f);
-            collider.offset = new Vector2(0f, -0.24f);
-            boxCollider.size = collider.size;
-            boxCollider.offset = collider.offset;
             Instantiate(slideParticles, groundCheck.position, Quaternion.identity);
-        }
-        else
-        {
-            BoxCollider2D collider = boxCollider;
-            collider.size = new Vector2(0.67f, 1.26f);
-            collider.offset = new Vector2(0f, 0f);
-            boxCollider.size = collider.size;
-            boxCollider.offset = collider.offset;
         }
 
         horizontal = Input.GetAxisRaw("Horizontal");
@@ -119,9 +110,19 @@ public class PlayerScript : MonoBehaviour
             coyoteTimeCounter = 0f;
         }
 
-        if (Input.GetKeyDown(KeyCode.S) && canSlide && coyoteTimeCounter > 0f)
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            slideBufferCounter = slideBufferTime;
+        }
+        else
+        {
+            slideBufferCounter -= Time.deltaTime;
+        }
+
+        if (slideBufferCounter > 0f && canSlide && coyoteTimeCounter > 0f)
         {
             StartCoroutine(Slide());
+            slideBufferCounter = 0f;
         }
 
         if (rb.linearVelocity.y < 0.01f)
@@ -176,7 +177,7 @@ public class PlayerScript : MonoBehaviour
 
     public void Explode(Vector2 direction, float force)
     {
-        rb.linearVelocity += direction.normalized * force;
+        rb.linearVelocity += (direction.normalized * force);
     }
 
     public void Die()
@@ -208,6 +209,11 @@ public class PlayerScript : MonoBehaviour
 
         rb.linearVelocity = new Vector2(rb.linearVelocity.x + (transform.localScale.x * slidePower), 0f);
 
+        BoxCollider2D collider = boxCollider;
+        collider.size = new Vector2(0.54f, 0.42f);
+        boxCollider.size = collider.size;
+        boxCollider.offset = collider.offset;
+        
         yield return new WaitForSeconds(slideTime);
 
         while (IsUnderGround())
@@ -215,6 +221,11 @@ public class PlayerScript : MonoBehaviour
             animator.SetBool("sliding", true);
             yield return null;
         }
+
+        collider = boxCollider;
+        collider.size = new Vector2(0.67f, 1.26f);
+        boxCollider.size = collider.size;
+        boxCollider.offset = collider.offset;
 
         rb.gravityScale = originalGravity;
         isSliding = false;

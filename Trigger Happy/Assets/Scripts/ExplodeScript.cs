@@ -7,7 +7,9 @@ public class ExplodeScript : MonoBehaviour
 
     [SerializeField] private GameObject particles;
     [SerializeField] private Animator anim;
-    
+
+    private bool hasExploded = false;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "EnemyBullet" || collision.gameObject.tag == "PlayerBullet")
@@ -18,6 +20,16 @@ public class ExplodeScript : MonoBehaviour
 
     public void Explode()
     {
+        if (hasExploded) return;
+        hasExploded = true;
+
+        Collider2D[] ownColliders = GetComponents<Collider2D>();
+
+        foreach (Collider2D col in ownColliders)
+        {
+            col.enabled = false;
+        }
+
         Collider2D[] objects = Physics2D.OverlapCircleAll(transform.position, impactRadius);
 
         foreach(Collider2D obj in objects)
@@ -31,15 +43,25 @@ public class ExplodeScript : MonoBehaviour
 
             PlayerScript playerScript = obj.GetComponent<PlayerScript>();
             EnemyScript enemyScript = obj.GetComponent<EnemyScript>();
+            ExplodeScript explodeScript = obj.GetComponent<ExplodeScript>();
+
+            if (obj.gameObject == gameObject)
+            {
+                continue;
+            }
 
             if (playerScript != null)
             {
                 playerScript.Explode(direction, force);
             }
+            else if(explodeScript != null)
+            {
+                explodeScript.Explode();
+            }
             else
             {
                 rb.AddForce(direction * force, ForceMode2D.Impulse);
-                if(enemyScript != null)
+                if (enemyScript != null)
                 {
                     enemyScript.dead = true;
                 }

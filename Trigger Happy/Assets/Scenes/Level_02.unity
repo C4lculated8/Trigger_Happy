@@ -20790,8 +20790,9 @@ MonoBehaviour:
   coyoteTime: 0.1
   jumpBufferTime: 0.1
   slidePower: 16
-  slideTime: 0.1
+  slideTime: 0.3
   slideCooldown: 0.2
+  slideBufferTime: 0.15
   weight: 50
   rb: {fileID: 1781185901}
   groundCheck: {fileID: 1309207105}

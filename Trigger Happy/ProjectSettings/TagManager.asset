@@ -58,6 +58,9 @@ TagManager:
   - name: Game
     uniqueID: 3047007215
     locked: 0
+  - name: Particles
+    uniqueID: 2475532427
+    locked: 0
   m_RenderingLayers:
   - Default
   m_MigratedRenderPipelines: []

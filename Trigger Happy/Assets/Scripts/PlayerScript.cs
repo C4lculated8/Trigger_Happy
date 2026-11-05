@@ -42,6 +42,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private BoxCollider2D boxCollider;
     [SerializeField] private GameObject gun;
     [SerializeField] private GameObject deathParticles;
+    [SerializeField] private GameObject slideParticles;
     [SerializeField] private LogicScript logicScript;
 
     void Update()
@@ -53,6 +54,7 @@ public class PlayerScript : MonoBehaviour
             collider.offset = new Vector2(0f, -0.24f);
             boxCollider.size = collider.size;
             boxCollider.offset = collider.offset;
+            Instantiate(slideParticles, groundCheck.position, Quaternion.identity);
         }
         else
         {

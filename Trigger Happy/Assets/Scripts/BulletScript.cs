@@ -27,7 +27,7 @@ public class BulletScript : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player" && gameObject.tag == "EnemyBullet")
         {
-            Destroy(gameObject);
+            collision.gameObject.GetComponent<PlayerScript>().Die();
         }
 
         if(collision.gameObject.tag == "Enemy" && gameObject.tag == "PlayerBullet")
@@ -35,6 +35,13 @@ public class BulletScript : MonoBehaviour
             collision.gameObject.GetComponent<EnemyScript>().dead = true;
         }
 
-        Destroy(gameObject);
+        if(collision.gameObject.tag == "Player" && gameObject.tag == "PlayerBullet")
+        {
+            rb.linearVelocity = transform.right * bulletSpeed;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }
